@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-size: 14;
+}
+
+
+/* here star will provide the below functionality to whole part which is box-sizing: it specify the width and height properties;    */
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+}
+
+.title-bar {
+    height: 5vh;
+    background-color: #107c41;
+    /* it means content is flexible */
+    /* properties of flex is 1.flex-direction:row/ column 
+    row means children aligns in row wise. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* by using above three thing anything can be centered inside div */
+    color: #fff;
+}
+
+.menu-bar {
+    height: 5vh;
+    background-color: #107c41;
+    display: flex;
+}
+
+.menu-item {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+    font-size: 16;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item.selected {
+    background-color: #fff;
+    color: #107c41;
+}
+
+.menu-item:hover {
+    background-color: #1f623d;
+}
+
+.menu-item.selected:hover {
+    background-color: #fff;
+    cursor: default;
+}
+
+.menu-icon-bar {
+    height: 5vh;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.font-family-selector {
+    height: 22px;
+    font-size: 14px;
+}
+
+.formula-bar {
+    height: 5vh;
+}
+
+.data-container {
+    height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.select-all {
+    width: 30px;
+    height: 30px;
+    border: 1px solid lightgray;
+}
+
+.column-name-container {
+    width: calc(100vw-30px);
+    height: 30px;
+    border: 1px solid lightgray;
+}
+
+.row-name-container {
+    width: 30px;
+    height: calc(75vh-30px);
+    border: 1px solid lightgray;
+}
+
+.input-cell-container {
+    width: calc(100vw-30px);
+    height: calc(75vh-30px);
+    border: 1px solid lightgray;
+}
+
+.sheet-bar {
+    height: 4vh;
+    display: flex;
+}
+
+.scroller {
+    width: 70px;
+}
+
+.icon-left-scroll:hover,
+.icon-right-scroll:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.icon-left-scroll,
+.icon-right-scroll {
+    font-size: 15px;
+}
+
+.icon-add {
+    color: #107c41;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.icon-add:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    /* transform is used to change size and rotation */
+}
+
+.sheet-tab-container {
+    border: 1px solid lightgray;
+    width: 100%;
+}
+
+.sheet-tab {
+    border-bottom: 4px solid #107c41;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    width: 70px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 600;
+    border-right: 1px solid lightgray;
+}
+
+.sheet-tab:hover {
+    cursor: default;
+}
